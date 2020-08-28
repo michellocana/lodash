@@ -1,9 +1,9 @@
 {
-  "name": "lodash",
+  "name": "lodash-es",
   "version": "4.17.20",
   "license": "MIT",
   "private": true,
-  "main": "lodash.js",
+  "main": "es/lodash.js",
   "engines": {
     "node": ">=4.0.0"
   },
