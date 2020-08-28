@@ -1,5 +1,5 @@
-var isObject = require('./isObject'),
-    isSymbol = require('./isSymbol');
+import isObject from './isObject.js';
+import isSymbol from './isSymbol.js';
 
 /** Used as references for various `Number` constants. */
 var NAN = 0 / 0;
@@ -63,4 +63,4 @@ function toNumber(value) {
     : (reIsBadHex.test(value) ? NAN : +value);
 }
 
-module.exports = toNumber;
+export default toNumber;

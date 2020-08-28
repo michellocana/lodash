@@ -1,14 +1,14 @@
-var assignInWith = require('./assignInWith'),
-    attempt = require('./attempt'),
-    baseValues = require('./_baseValues'),
-    customDefaultsAssignIn = require('./_customDefaultsAssignIn'),
-    escapeStringChar = require('./_escapeStringChar'),
-    isError = require('./isError'),
-    isIterateeCall = require('./_isIterateeCall'),
-    keys = require('./keys'),
-    reInterpolate = require('./_reInterpolate'),
-    templateSettings = require('./templateSettings'),
-    toString = require('./toString');
+import assignInWith from './assignInWith.js';
+import attempt from './attempt.js';
+import baseValues from './_baseValues.js';
+import customDefaultsAssignIn from './_customDefaultsAssignIn.js';
+import escapeStringChar from './_escapeStringChar.js';
+import isError from './isError.js';
+import isIterateeCall from './_isIterateeCall.js';
+import keys from './keys.js';
+import reInterpolate from './_reInterpolate.js';
+import templateSettings from './templateSettings.js';
+import toString from './toString.js';
 
 /** Used to match empty string literals in compiled template source. */
 var reEmptyStringLeading = /\b__p \+= '';/g,
@@ -244,4 +244,4 @@ function template(string, options, guard) {
   return result;
 }
 
-module.exports = template;
+export default template;

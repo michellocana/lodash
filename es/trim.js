@@ -1,9 +1,9 @@
-var baseToString = require('./_baseToString'),
-    castSlice = require('./_castSlice'),
-    charsEndIndex = require('./_charsEndIndex'),
-    charsStartIndex = require('./_charsStartIndex'),
-    stringToArray = require('./_stringToArray'),
-    toString = require('./toString');
+import baseToString from './_baseToString.js';
+import castSlice from './_castSlice.js';
+import charsEndIndex from './_charsEndIndex.js';
+import charsStartIndex from './_charsStartIndex.js';
+import stringToArray from './_stringToArray.js';
+import toString from './toString.js';
 
 /** Used to match leading and trailing whitespace. */
 var reTrim = /^\s+|\s+$/g;
@@ -46,4 +46,4 @@ function trim(string, chars, guard) {
   return castSlice(strSymbols, start, end).join('');
 }
 
-module.exports = trim;
+export default trim;

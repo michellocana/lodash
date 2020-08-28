@@ -1,8 +1,8 @@
-var baseToString = require('./_baseToString'),
-    castSlice = require('./_castSlice'),
-    charsEndIndex = require('./_charsEndIndex'),
-    stringToArray = require('./_stringToArray'),
-    toString = require('./toString');
+import baseToString from './_baseToString.js';
+import castSlice from './_castSlice.js';
+import charsEndIndex from './_charsEndIndex.js';
+import stringToArray from './_stringToArray.js';
+import toString from './toString.js';
 
 /** Used to match leading and trailing whitespace. */
 var reTrimEnd = /\s+$/;
@@ -40,4 +40,4 @@ function trimEnd(string, chars, guard) {
   return castSlice(strSymbols, 0, end).join('');
 }
 
-module.exports = trimEnd;
+export default trimEnd;

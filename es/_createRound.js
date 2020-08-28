@@ -1,6 +1,6 @@
-var toInteger = require('./toInteger'),
-    toNumber = require('./toNumber'),
-    toString = require('./toString');
+import toInteger from './toInteger.js';
+import toNumber from './toNumber.js';
+import toString from './toString.js';
 
 /* Built-in method references for those with the same name as other `lodash` methods. */
 var nativeIsFinite = root.isFinite,
@@ -31,4 +31,4 @@ function createRound(methodName) {
   };
 }
 
-module.exports = createRound;
+export default createRound;

@@ -1,10 +1,10 @@
-var arrayMap = require('./_arrayMap'),
-    baseIteratee = require('./_baseIteratee'),
-    baseMap = require('./_baseMap'),
-    baseSortBy = require('./_baseSortBy'),
-    baseUnary = require('./_baseUnary'),
-    compareMultiple = require('./_compareMultiple'),
-    identity = require('./identity');
+import arrayMap from './_arrayMap.js';
+import baseIteratee from './_baseIteratee.js';
+import baseMap from './_baseMap.js';
+import baseSortBy from './_baseSortBy.js';
+import baseUnary from './_baseUnary.js';
+import compareMultiple from './_compareMultiple.js';
+import identity from './identity.js';
 
 /**
  * The base implementation of `_.orderBy` without param guards.
@@ -44,4 +44,4 @@ function baseOrderBy(collection, iteratees, orders) {
   });
 }
 
-module.exports = baseOrderBy;
+export default baseOrderBy;
